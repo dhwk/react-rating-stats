@@ -11,7 +11,7 @@ export const styles = theme => ({
     textAlign: 'center'
   },
   score: {
-    color: theme.palette.gray2,
+    color: theme.palette.gray1,
     fontSize: 64,
     fontWeight: 100,
     lineHeight: '64px',

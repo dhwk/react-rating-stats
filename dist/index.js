@@ -11,8 +11,7 @@ injectSheet = injectSheet && injectSheet.hasOwnProperty('default') ? injectSheet
 var styles = function styles(theme) {
   return {
     root: {
-      display: 'flex',
-      padding: theme.padding
+      display: 'flex'
     }
   };
 };
@@ -37,15 +36,7 @@ Rating.propTypes = {
 
 var Rating$1 = injectSheet(styles)(Rating);
 
-var toConsumableArray = function (arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
-
-    return arr2;
-  } else {
-    return Array.from(arr);
-  }
-};
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var styles$2 = function styles(theme) {
   return {
@@ -79,7 +70,7 @@ var Stars = function Stars(_ref) {
       classes = _ref.classes;
 
   var percent = 100 * value / max;
-  var stars = [].concat(toConsumableArray(Array(max))).map(function (dummy, index) {
+  var stars = [].concat(_toConsumableArray(Array(max))).map(function (dummy, index) {
     return React.createElement('span', { key: index, className: classes.star });
   });
   return React.createElement(
@@ -114,7 +105,7 @@ var styles$1 = function styles(theme) {
       textAlign: 'center'
     },
     score: {
-      color: theme.palette.gray2,
+      color: theme.palette.gray1,
       fontSize: 64,
       fontWeight: 100,
       lineHeight: '64px',
@@ -171,6 +162,8 @@ Score$1.propTypes = {
 
 var Score$2 = injectSheet(styles$1)(Score$1);
 
+function _toConsumableArray$1(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 var styles$3 = function styles(theme) {
   var styles = {
     root: {
@@ -188,9 +181,9 @@ var styles$3 = function styles(theme) {
     },
     outer: {
       display: 'inline-block',
-      width: 120,
-      '@media (min-width: 600px)': {
-        width: 375
+      width: 100,
+      '@media (min-width: 400px)': {
+        width: 355
       }
     },
     inner: {
@@ -261,7 +254,7 @@ var HistogramWTF = function HistogramWTF(_ref2) {
   var values = _ref2.values,
       classes = _ref2.classes;
 
-  var maxValue = Math.max.apply(Math, toConsumableArray(values));
+  var maxValue = Math.max.apply(Math, _toConsumableArray$1(values));
   return React.createElement(
     'div',
     { className: classes.root },

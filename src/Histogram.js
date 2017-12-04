@@ -19,9 +19,9 @@ export const styles = theme => {
     },
     outer: {
       display: 'inline-block',
-      width: 120,
-      '@media (min-width: 600px)': {
-        width: 375
+      width: 100,
+      '@media (min-width: 400px)': {
+        width: 355
       }
     },
     inner: {

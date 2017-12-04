@@ -6,8 +6,7 @@ import { Score, Histogram } from '.'
 
 export const styles = theme => ({
   root: {
-    display: 'flex',
-    padding: theme.padding
+    display: 'flex'
   }
 })
 
