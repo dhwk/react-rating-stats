@@ -5,16 +5,15 @@ React rating stats component
 <img src="docs/images/Rating.png" width="640"/>
 
 ## [Demo](https://dhwk.github.io/react-rating-stats/)
-
 ```sh
 cd demo
 npm install
 npm start
 ```
-## Usage
 
+## Usage
 ```sh
-npm install https://github.com/dhwk/react-rating-stats --save
+npm install react-rating-stats
 ```
 ```js
 import React from 'react'
