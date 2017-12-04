@@ -36,7 +36,15 @@ Rating.propTypes = {
 
 var Rating$1 = injectSheet(styles)(Rating);
 
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+var toConsumableArray = function (arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  } else {
+    return Array.from(arr);
+  }
+};
 
 var styles$2 = function styles(theme) {
   return {
@@ -70,7 +78,7 @@ var Stars = function Stars(_ref) {
       classes = _ref.classes;
 
   var percent = 100 * value / max;
-  var stars = [].concat(_toConsumableArray(Array(max))).map(function (dummy, index) {
+  var stars = [].concat(toConsumableArray(Array(max))).map(function (dummy, index) {
     return React.createElement('span', { key: index, className: classes.star });
   });
   return React.createElement(
@@ -162,8 +170,6 @@ Score$1.propTypes = {
 
 var Score$2 = injectSheet(styles$1)(Score$1);
 
-function _toConsumableArray$1(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
 var styles$3 = function styles(theme) {
   var styles = {
     root: {
@@ -254,7 +260,7 @@ var HistogramWTF = function HistogramWTF(_ref2) {
   var values = _ref2.values,
       classes = _ref2.classes;
 
-  var maxValue = Math.max.apply(Math, _toConsumableArray$1(values));
+  var maxValue = Math.max.apply(Math, toConsumableArray(values));
   return React.createElement(
     'div',
     { className: classes.root },
