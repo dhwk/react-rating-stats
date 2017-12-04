@@ -1,0 +1,52 @@
+{
+  "name": "react-rating-stats",
+  "description": "React rating stats component",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "minified:main": "dist/index.min.js",
+  "scripts": {
+    "start": "NODE_ENV=development rollup -c -w",
+    "clean": "rimraf dist",
+    "build": "npm run transpile; npm run minify",
+    "transpile": "NODE_ENV=production rollup -c",
+    "minify": "uglifyjs dist/index.js -c collapse_vars,evaluate,unsafe,unused,dead_code -m -o dist/index.min.js --in-source-map dist/index.js.map --source-map",
+    "prepublish": "npm run build"
+  },
+  "author": {
+    "name": "dhwk",
+    "email": "dhwk1861@gmail.com"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhwk/react-rating-stats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhwk/react-rating-stats/issues"
+  },
+  "homepage": "https://github.com/dhwk/react-rating-stats",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.52.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-memory": "^2.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "uglify-js": "^3.2.1",
+    "webpack": "^3.9.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-jss": "^8.1.0"
+  }
+}

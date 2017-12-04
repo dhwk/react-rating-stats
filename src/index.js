@@ -1,0 +1,5 @@
+export { default } from './Rating'
+export { default as Score } from './Score'
+export { default as Histogram } from './Histogram'
+export { default as Stars } from './Stars'
+export { default as theme } from './theme'

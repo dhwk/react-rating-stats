@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,SACA,UACA,kDAAyD,CAG3D,MACE,cAAgB","file":"static/css/main.a6d1e9bf.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto\", UILanguageFont, Arial, sans-serif;\n}\n\nh2, h3 {\n  padding: 0 24px;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}
