@@ -1,5 +1,8 @@
 # react-rating-stats
 
+[![Build Status](https://travis-ci.org/dhwk/react-rating-stats.svg?branch=master)](https://travis-ci.org/dhwk/react-rating-stats)
+[![npm](https://img.shields.io/npm/v/react-rating-stats.svg)](http://npm.im/react-rating-stats)
+
 React rating stats component
 
 <img src="docs/images/Rating.png" width="640"/>
