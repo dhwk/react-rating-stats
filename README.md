@@ -46,7 +46,7 @@ Package default export, aligns components `Score` and `Histogram`
 * `values` – Array of integer rating counters
 
 ```JSX
-<Score values={[1, 0, 0, 0, 1]} />
+<Score values={[4022004, 1654689, 3923104, 9105819, 42660181]} />
 ```
 <img src="docs/images/Score.png" width="640"/>
 
