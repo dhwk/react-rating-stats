@@ -4,6 +4,10 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.npmignore
+rollup.config.js
+src
 public
 demo
 docs
+README.md
