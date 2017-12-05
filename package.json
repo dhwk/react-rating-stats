@@ -1,6 +1,6 @@
 {
   "name": "react-rating-stats",
-  "description": "React rating stats component",
+  "description": "React rating stats component based on JSS",
   "version": "0.1.2",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",

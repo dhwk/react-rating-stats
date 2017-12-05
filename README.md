@@ -3,9 +3,10 @@
 [![Build Status](https://travis-ci.org/dhwk/react-rating-stats.svg?branch=master)](https://travis-ci.org/dhwk/react-rating-stats)
 [![npm](https://img.shields.io/npm/v/react-rating-stats.svg)](http://npm.im/react-rating-stats)
 
-React rating stats component
+React rating stats component based on [JSS](http://cssinjs.org/react-jss/)
 
-<img src="docs/images/Rating.png" width="640"/>
+
+<img src="docs/images/Rating.png" width="579"/>
 
 ## [Demo](https://dhwk.github.io/react-rating-stats/)
 ```sh
@@ -43,7 +44,7 @@ Package default export, aligns components `Score` and `Histogram`
 ```JSX
 <Rating values={[4022004, 1654689, 3923104, 9105819, 42660181]} />
 ```
-<img src="docs/images/Rating.png" width="640"/>
+<img src="docs/images/Rating.png" width="579"/>
 
 ### `Score`
 * `values` – Array of integer rating counters
@@ -51,7 +52,7 @@ Package default export, aligns components `Score` and `Histogram`
 ```JSX
 <Score values={[4022004, 1654689, 3923104, 9105819, 42660181]} />
 ```
-<img src="docs/images/Score.png" width="640"/>
+<img src="docs/images/Score.png" width="579"/>
 
 ### `Histogram`
 * `values` – Array of integer rating counters
@@ -59,7 +60,7 @@ Package default export, aligns components `Score` and `Histogram`
 ```JSX
 <Histogram values={[4022004, 1654689, 3923104, 9105819, 42660181]} />
 ```
-<img src="docs/images/Histogram.png" width="640"/>
+<img src="docs/images/Histogram.png" width="579"/>
 
 ### `Stars`
 * `value` – Integer number `[0, max]` of current rating
@@ -68,7 +69,7 @@ Package default export, aligns components `Score` and `Histogram`
 ```JSX
   <Stars value={4} max={8} />
 ```
-<img src="docs/images/Stars.png" width="640"/>
+<img src="docs/images/Stars.png" width="579"/>
 
 ## License
 
