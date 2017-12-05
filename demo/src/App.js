@@ -1,7 +1,7 @@
 import React from 'react'
 import injectSheet, { ThemeProvider } from 'react-jss'
 
-import Rating, { Score, Histogram, Stars, theme } from '../../dist'
+import Rating, { Score, Histogram, Stars, theme } from 'react-rating-stats'
 
 const PlainBox = ({ classes, children }) => (
   <div className={classes.root}>{children}</div>
