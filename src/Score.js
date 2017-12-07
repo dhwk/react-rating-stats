@@ -30,7 +30,7 @@ export const styles = theme => ({
   }
 })
 
-const Score = ({ values = [], classes }) => {
+const Score = ({ values, classes }) => {
   const total = values.reduce((a, b) => a + b, 0)
   const average = total
     ? values.reduce((a, b, index) => a + b * (index + 1), 0) / total
@@ -46,7 +46,7 @@ const Score = ({ values = [], classes }) => {
 }
 
 Score.propTypes = {
-  values: PropTypes.arrayOf(PropTypes.number),
+  values: PropTypes.arrayOf(PropTypes.number).isRequired,
   classes: PropTypes.object.isRequired
 }
 

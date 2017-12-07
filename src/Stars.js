@@ -41,7 +41,7 @@ const Stars = ({ value, max = 5, classes }) => {
 }
 
 Stars.propTypes = {
-  value: PropTypes.number,
+  value: PropTypes.number.isRequired,
   max: PropTypes.number,
   classes: PropTypes.object.isRequired
 }

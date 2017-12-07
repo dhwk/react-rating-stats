@@ -5,7 +5,7 @@ import injectSheet from 'react-jss'
 export const styles = theme => {
   const styles = {
     root: {
-      marginLeft: theme.padding
+      whiteSpace: 'nowrap'
     },
     label: {
       color: theme.palette.gray2,
@@ -90,7 +90,7 @@ const HistogramWTF = ({ values, classes }) => {
 }
 
 HistogramWTF.propTypes = {
-  values: PropTypes.arrayOf(PropTypes.number),
+  values: PropTypes.arrayOf(PropTypes.number).isRequired,
   classes: PropTypes.object.isRequired
 }
 

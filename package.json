@@ -1,7 +1,7 @@
 {
   "name": "react-rating-stats",
   "description": "React rating stats component based on JSS",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
   "minified:main": "dist/index.min.js",

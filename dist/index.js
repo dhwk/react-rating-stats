@@ -12,25 +12,31 @@ var styles = function styles(theme) {
   return {
     root: {
       display: 'flex'
+    },
+    score: {
+      display: 'inline-box',
+      paddingRight: theme.padding
     }
   };
 };
 
 var Rating = function Rating(_ref) {
-  var _ref$values = _ref.values,
-      values = _ref$values === undefined ? [] : _ref$values,
+  var values = _ref.values,
       classes = _ref.classes;
-
   return React.createElement(
     'div',
     { className: classes.root },
-    React.createElement(_.Score, { values: values }),
+    React.createElement(
+      'div',
+      { className: classes.score },
+      React.createElement(_.Score, { values: values })
+    ),
     React.createElement(_.Histogram, { values: values })
   );
 };
 
 Rating.propTypes = {
-  values: PropTypes.arrayOf(PropTypes.number),
+  values: PropTypes.arrayOf(PropTypes.number).isRequired,
   classes: PropTypes.object.isRequired
 };
 
@@ -98,7 +104,7 @@ var Stars = function Stars(_ref) {
 };
 
 Stars.propTypes = {
-  value: PropTypes.number,
+  value: PropTypes.number.isRequired,
   max: PropTypes.number,
   classes: PropTypes.object.isRequired
 };
@@ -134,8 +140,7 @@ var styles$1 = function styles(theme) {
 };
 
 var Score$1 = function Score$$1(_ref) {
-  var _ref$values = _ref.values,
-      values = _ref$values === undefined ? [] : _ref$values,
+  var values = _ref.values,
       classes = _ref.classes;
 
   var total = values.reduce(function (a, b) {
@@ -164,7 +169,7 @@ var Score$1 = function Score$$1(_ref) {
 };
 
 Score$1.propTypes = {
-  values: PropTypes.arrayOf(PropTypes.number),
+  values: PropTypes.arrayOf(PropTypes.number).isRequired,
   classes: PropTypes.object.isRequired
 };
 
@@ -173,7 +178,7 @@ var Score$2 = injectSheet(styles$1)(Score$1);
 var styles$3 = function styles(theme) {
   var styles = {
     root: {
-      marginLeft: theme.padding
+      whiteSpace: 'nowrap'
     },
     label: {
       color: theme.palette.gray2,
@@ -277,7 +282,7 @@ var HistogramWTF = function HistogramWTF(_ref2) {
 };
 
 HistogramWTF.propTypes = {
-  values: PropTypes.arrayOf(PropTypes.number),
+  values: PropTypes.arrayOf(PropTypes.number).isRequired,
   classes: PropTypes.object.isRequired
 };
 
